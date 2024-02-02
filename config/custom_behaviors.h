@@ -1,26 +1,26 @@
 
 
-// autopair macros
-ZMK_BEHAVIOR(mbkt, macro,
-    bindings = <&macro_tap &kp LBKT &kp RBKT &kp LEFT>;
-)
-ZMK_BEHAVIOR(mbrc, macro,
-    bindings = <&macro_tap &kp LBRC &kp RBRC &kp LEFT>;
-)
-ZMK_BEHAVIOR(mpar, macro,
-    bindings = <&macro_tap &kp LPAR &kp RPAR &kp LEFT>;
-)
-ZMK_BEHAVIOR(msqt, macro,
-    bindings = <&macro_tap &kp SQT &kp SQT &kp LEFT>;
-)
-ZMK_BEHAVIOR(mdqt, macro,
-    bindings = <&macro_tap &kp DQT &kp DQT &kp LEFT>;
-)
-// tap: '' | shift + tap: ""
-ZMK_BEHAVIOR(msqt_morph, mod_morph,
-    bindings = <&msqt>, <&mdqt>;
-    mods = <(MOD_LSFT|MOD_RSFT)>;
-)
+/* // autopair macros */
+/* ZMK_BEHAVIOR(mbkt, macro, */
+/*     bindings = <&macro_tap &kp LBKT &kp RBKT &kp LEFT>; */
+/* ) */
+/* ZMK_BEHAVIOR(mbrc, macro, */
+/*     bindings = <&macro_tap &kp LBRC &kp RBRC &kp LEFT>; */
+/* ) */
+/* ZMK_BEHAVIOR(mpar, macro, */
+/*     bindings = <&macro_tap &kp LPAR &kp RPAR &kp LEFT>; */
+/* ) */
+/* ZMK_BEHAVIOR(msqt, macro, */
+/*     bindings = <&macro_tap &kp SQT &kp SQT &kp LEFT>; */
+/* ) */
+/* ZMK_BEHAVIOR(mdqt, macro, */
+/*     bindings = <&macro_tap &kp DQT &kp DQT &kp LEFT>; */
+/* ) */
+/* // tap: '' | shift + tap: "" */
+/* ZMK_BEHAVIOR(msqt_morph, mod_morph, */
+/*     bindings = <&msqt>, <&mdqt>; */
+/*     mods = <(MOD_LSFT|MOD_RSFT)>; */
+/* ) */
 // tab navigation macros
 ZMK_BEHAVIOR(mtabnext, macro,
     bindings = <&macro_tap &kp G &kp T>;
@@ -116,6 +116,12 @@ ZMK_BEHAVIOR(bs_del, mod_morph,
     keep-mods = <MOD_RSFT>;
 )
 
+// tap: sticky shift | double-tap: esc | hold: shift
+ZMK_BEHAVIOR(shift_esc, mod_morph,
+    bindings = <&sk LSHFT>, <&kp ESC>;
+    mods = <(MOD_LSFT|MOD_RSFT)>;
+)
+
 // tap: sticky shift | double-tap: sticky num-layer | hold: layer
 ZMK_BEHAVIOR(shift_num, hold_tap,
     flavor = "balanced";
@@ -126,6 +132,13 @@ ZMK_BEHAVIOR(shift_num, hold_tap,
 ZMK_BEHAVIOR(sticky_num_dance, tap_dance,
     tapping-term-ms = <300>;
     bindings = <&sk LSHFT>, <&sl NUM>;  // reverse this for sticky-num on single tap
+)
+// tap: caps word | double-tap: caps lock | hold: layer
+ZMK_BEHAVIOR(caps_layer, hold_tap,
+    flavor = "balanced";
+    tapping-term-ms = <200>;
+    quick-tap-ms = <QUICK_TAP_MS>;
+    bindings = <&mo>, <&caps_dance>;
 )
 
 // tap: caps word | double-tap: caps lock
@@ -167,6 +180,10 @@ ZMK_BEHAVIOR(comma_dance, tap_dance,
 #define Q_F &mt LS(LG(F)) LG(F)
 #define Q_P &mt LS(LG(P)) LG(P)
 #define Q_B &mt LS(LG(B)) LG(B)
+#define Q_A &mt LS(LG(A)) LG(A)
+#define Q_R &mt LS(LG(R)) LG(R)
+#define Q_S &mt LS(LG(S)) LG(S)
+#define Q_T &mt LS(LG(T)) LG(T)
 #define Q_G &mt LS(LG(G)) LG(G)
 #define Q_Z &mt LS(LG(Z)) LG(Z)
 #define Q_X &mt LS(LG(X)) LG(X)
@@ -194,9 +211,13 @@ ZMK_BEHAVIOR(comma_dance, tap_dance,
 // Thumb keys
 #define SPC_NAV     &lt_spc NAV 0      // tap: space | shift + tap: underscore | hold: NAV layer
 #define TAB_HYP     &mt RHYP TAB       // tap: tab | hold: HYPER key
-#define RET_HYP     &mt RHYP ENTER     // tap: enter | hold: HYPER key
+#define ESC_HYP     &mt RHYP ESC       // tap: escape | hold: HYPER key
+/* #define RET_HYP     &mt RHYP ENTER     // tap: enter | hold: HYPER key */
 #define BSPC_SYM    &lt_del SYM 0      // tap: backspace | lshft + tap: delete | rshft + tap: shift-delete | hold: SYM layer
-#define SHFT_MS     &shift_num MS 0    // tap: sticky shift | double-tap: sticky num layer | hold: MS layer
+/* #define SHFT_MS     &shift_num MS 0    // tap: sticky shift | double-tap: sticky num layer | hold: MS layer */
+#define CAPS_MS     &caps_layer MS 0   // tap: caps word | double-tap: caps lock | hold: MS layer
+#define SHIFT_ESC   &shift_esc         // tap: sticky shift | double-tap: esc | hold: shift
+#define SHRTCAT_FN  &lt FN LA(LC(SPACE)) // tap: shortcat | hold: FN layer
 
 /* #define MAKE_LONG_HOLD(NAME, HOLD) \ */
 /*     ZMK_BEHAVIOR(NAME, hold_tap, \ */
