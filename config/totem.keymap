@@ -31,8 +31,6 @@
 #define MS 5
 #define NAV 6
 
-#include "combos.h"
-
 /* Global settings */
 #include "general.h"
 
@@ -42,6 +40,7 @@
 /* Macros and shortcuts */
 #include "custom_behaviors.h"
 
+#include "combos.h"
 
 / {
         keymap {
