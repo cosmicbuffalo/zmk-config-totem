@@ -96,6 +96,7 @@ ZMK_BEHAVIOR(lt_spc, hold_tap,
     flavor = "balanced";
     tapping-term-ms = <200>;
     quick-tap-ms = <QUICK_TAP_MS>;
+    require-prior-idle-ms = <150>;
     bindings = <&mo>, <&spund>;
 )
 ZMK_BEHAVIOR(spund, mod_morph,
@@ -133,6 +134,13 @@ ZMK_BEHAVIOR(sticky_num_dance, tap_dance,
     tapping-term-ms = <300>;
     bindings = <&sk LSHFT>, <&sl NUM>;  // reverse this for sticky-num on single tap
 )
+// tap: num word | double-tap: esc | hold: layer
+ZMK_BEHAVIOR(numl_layer, hold_tap,
+    flavor = "balanced";
+    tapping-term-ms = <200>;
+    quick-tap-ms = <QUICK_TAP_MS>;
+    bindings = <&mo>, <&numl_dance>;
+)
 // tap: caps word | double-tap: caps lock | hold: layer
 ZMK_BEHAVIOR(caps_layer, hold_tap,
     flavor = "balanced";
@@ -145,6 +153,11 @@ ZMK_BEHAVIOR(caps_layer, hold_tap,
 ZMK_BEHAVIOR(caps_dance, tap_dance,
     tapping-term-ms = <200>;
     bindings = <&caps_word>, <&kp CAPS>;
+)
+// tap: num word | double-tap: esc
+ZMK_BEHAVIOR(numl_dance, tap_dance,
+    tapping-term-ms = <200>;
+    bindings = <&num_word>, <&kp ESC>;
 )
 ZMK_BEHAVIOR(comma_space, macro,
     bindings = <&macro_tap &kp COMMA &kp SPACE>;
@@ -211,13 +224,16 @@ ZMK_BEHAVIOR(comma_dance, tap_dance,
 // Thumb keys
 #define SPC_NAV     &lt_spc NAV 0      // tap: space | shift + tap: underscore | hold: NAV layer
 #define TAB_HYP     &mt RHYP TAB       // tap: tab | hold: HYPER key
+#define ENTER_HYP   &mt RHYP ENTER     // tap: enter | hold: HYPER key
 #define ESC_HYP     &mt RHYP ESC       // tap: escape | hold: HYPER key
 /* #define RET_HYP     &mt RHYP ENTER     // tap: enter | hold: HYPER key */
 #define BSPC_SYM    &lt_del SYM 0      // tap: backspace | lshft + tap: delete | rshft + tap: shift-delete | hold: SYM layer
 /* #define SHFT_MS     &shift_num MS 0    // tap: sticky shift | double-tap: sticky num layer | hold: MS layer */
-#define CAPS_MS     &caps_layer MS 0   // tap: caps word | double-tap: caps lock | hold: MS layer
+#define NUML_MS     &numl_layer MS 0   // tap: num word | double-tap: esc | hold: MS layer
 #define SHIFT_ESC   &shift_esc         // tap: sticky shift | double-tap: esc | hold: shift
 #define SHRTCAT_FN  &lt FN LA(LC(SPACE)) // tap: shortcat | hold: FN layer
+
+#define SHRTCAT     &kp LA(LC(SPACE))
 
 /* #define MAKE_LONG_HOLD(NAME, HOLD) \ */
 /*     ZMK_BEHAVIOR(NAME, hold_tap, \ */

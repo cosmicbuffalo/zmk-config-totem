@@ -37,3 +37,10 @@ MAKE_HRM(hmr, &kp, &kp, KEYS_L THUMBS)  // right-hand
 #define SYM_RBKT   &hmr RCTRL RBKT
 #define SYM_AT     &hmr RALT AT
 #define SYM_DOLLAR &hmr RGUI DOLLAR
+
+#define NUML_N4    &hml LALT N4
+#define NUML_N5    &hml LCTRL N5
+#define NUML_N6    &hml LSHFT N6
+#define NUMR_N4    &hmr RSHFT N4
+#define NUMR_N5    &hmr RCTRL N5
+#define NUMR_N6    &hmr RALT N6

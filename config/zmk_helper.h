@@ -21,12 +21,27 @@
 #define ZMK_BEHAVIOR_CORE_tri_state   compatible = "zmk,behavior-tri-state";  #binding-cells = <0>
 
 #define ZMK_BEHAVIOR(name, type, ...) \
-    / { \
-        behaviors { \
-            name: name { \
-                label = ZMK_HELPER_STRINGIFY(ZB_ ## name); \
-                ZMK_BEHAVIOR_CORE_ ## type; \
-                __VA_ARGS__ \
-            }; \
-        }; \
-    };
+  / { \
+    behaviors { \
+      name: name { \
+        label = ZMK_HELPER_STRINGIFY(ZB_ ## name); \
+        ZMK_BEHAVIOR_CORE_ ## type; \
+        __VA_ARGS__ \
+      }; \
+    }; \
+  };
+
+
+#define ZMK_COMBO(name, combo_bindings, keypos, combo_layers) \
+  / { \
+    combos { \
+      compatible = "zmk,combos"; \
+      combo_ ## name { \
+        timeout-ms = <30>; \
+        bindings = <combo_bindings>; \
+        key-positions = <keypos>; \
+        layers = <combo_layers>; \
+        require-prior-idle-ms = <150>; \
+      }; \
+    }; \
+  };
