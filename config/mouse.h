@@ -1,4 +1,4 @@
-
+/*
 #include <dt-bindings/zmk/mouse.h>
 
 &mmv {
@@ -45,4 +45,4 @@
 #define U_WH_L &mwh SCROLL_LEFT
 #define U_WH_R &mwh SCROLL_RIGHT
 #define U_WH_U &mwh SCROLL_UP
-
+*/
