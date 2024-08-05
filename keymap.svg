@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="258.64mm" height="94.36mm" viewBox="0 0 733.16 267.46">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #161b22;
+      }
+
+      .cls-2 {
+        fill: none;
+        stroke: #58a6ff;
+        stroke-miterlimit: 10;
+        stroke-width: .28px;
+      }
+    </style>
+  </defs>
+  <g id="Keys_Kopie" data-name="Keys Kopie">
+    <rect id="key-0" class="cls-2" x="48.03" y="79.99" width="38.27" height="35.43" rx=".95" ry=".95" transform="translate(-15.95 13.15) rotate(-10)"/>
+    <rect id="key-1" class="cls-2" x="105.36" y="35.97" width="38.27" height="35.43" rx=".95" ry=".95" transform="translate(-3.44 8.81) rotate(-4)"/>
+    <rect id="key-2" class="cls-2" x="163.63" y="7.08" width="38.27" height="35.43" rx=".95" ry=".95"/>
+    <rect id="key-3" class="cls-2" x="214.63" y="31.09" width="38.27" height="35.43" rx=".95" ry=".95"/>
+    <rect id="key-4" class="cls-2" x="265.63" y="38.69" width="38.27" height="35.43" rx=".95" ry=".95"/>
+    <rect id="key-5" class="cls-2" x="429.03" y="38.69" width="38.27" height="35.43" rx=".95" ry=".95"/>
+    <rect id="key-6" class="cls-2" x="480.03" y="31.09" width="38.27" height="35.43" rx=".95" ry=".95"/>
+    <rect id="key-7" class="cls-2" x="531.03" y="7.08" width="38.27" height="35.43" rx=".95" ry=".95"/>
+    <rect id="key-8" class="cls-2" x="590.72" y="34.56" width="35.43" height="38.27" rx=".95" ry=".95" transform="translate(512.44 656.9) rotate(-86)"/>
+    <rect id="key-9" class="cls-2" x="648.05" y="78.57" width="35.43" height="38.27" rx=".95" ry=".95" transform="translate(453.93 736.39) rotate(-80)"/>
+    <rect id="key-10" class="cls-2" x="56.33" y="127.5" width="38.27" height="35.43" rx=".95" ry=".95" transform="translate(-24.07 15.31) rotate(-10)"/>
+    <rect id="key-11" class="cls-2" x="108.76" y="84.07" width="38.27" height="35.43" rx=".95" ry=".95" transform="translate(-6.79 9.17) rotate(-4)"/>
+    <rect id="key-12" class="cls-2" x="163.63" y="55.18" width="38.27" height="35.43" rx=".95" ry=".95"/>
+    <rect id="key-13" class="cls-2" x="214.63" y="79.29" width="38.27" height="35.43" rx=".95" ry=".95"/>
+    <rect id="key-14" class="cls-2" x="265.63" y="86.89" width="38.27" height="35.43" rx=".95" ry=".95"/>
+    <rect id="key-15" class="cls-2" x="429.03" y="86.89" width="38.27" height="35.43" rx=".95" ry=".95"/>
+    <rect id="key-16" class="cls-2" x="480.03" y="79.29" width="38.27" height="35.43" rx=".95" ry=".95"/>
+    <rect id="key-17" class="cls-2" x="531.03" y="55.18" width="38.27" height="35.43" rx=".95" ry=".95"/>
+    <rect id="key-18" class="cls-2" x="587.32" y="82.66" width="35.43" height="38.27" rx=".95" ry=".95" transform="translate(461.29 698.25) rotate(-86)"/>
+    <rect id="key-19" class="cls-2" x="639.75" y="126.08" width="35.43" height="38.27" rx=".95" ry=".95" transform="translate(400.29 767.47) rotate(-80)"/>
+    <rect id="key-20" class="cls-2" x="10.65" y="162.48" width="38.27" height="35.43" rx=".95" ry=".95" transform="translate(-30.84 7.91) rotate(-10)"/>
+    <rect id="key-21" class="cls-2" x="64.73" y="174.9" width="38.27" height="35.43" rx=".95" ry=".95" transform="translate(-32.17 17.49) rotate(-10)"/>
+    <rect id="key-22" class="cls-2" x="112.06" y="132.08" width="38.27" height="35.43" rx=".95" ry=".95" transform="translate(-10.13 9.52) rotate(-4)"/>
+    <rect id="key-23" class="cls-2" x="163.63" y="103.38" width="38.27" height="35.43" rx=".95" ry=".95"/>
+    <rect id="key-24" class="cls-2" x="214.63" y="127.49" width="38.27" height="35.43" rx=".95" ry=".95"/>
+    <rect id="key-25" class="cls-2" x="265.63" y="135" width="38.27" height="35.43" rx=".95" ry=".95"/>
+    <rect id="key-26" class="cls-2" x="429.03" y="135" width="38.27" height="35.43" rx=".95" ry=".95"/>
+    <rect id="key-27" class="cls-2" x="480.03" y="127.49" width="38.27" height="35.43" rx=".95" ry=".95"/>
+    <rect id="key-28" class="cls-2" x="531.03" y="103.38" width="38.27" height="35.43" rx=".95" ry=".95"/>
+    <rect id="key-29" class="cls-2" x="584.02" y="130.66" width="35.43" height="38.27" rx=".95" ry=".95" transform="translate(410.33 739.61) rotate(-86)"/>
+    <rect id="key-30" class="cls-2" x="631.35" y="173.48" width="35.43" height="38.27" rx=".95" ry=".95" transform="translate(346.67 798.37) rotate(-80)"/>
+    <rect id="key-31" class="cls-2" x="685.43" y="161.06" width="35.43" height="38.27" rx=".95" ry=".95" transform="translate(403.59 841.37) rotate(-80)"/>
+    <rect id="key-32" class="cls-2" x="200.41" y="185.94" width="38.27" height="35.43" rx=".95" ry=".95"/>
+    <rect id="key-33" class="cls-2" x="258.34" y="192.31" width="35.43" height="38.27" rx=".95" ry=".95" transform="translate(.37 423.37) rotate(-75)"/>
+    <rect id="key-34" class="cls-2" x="310.56" y="214.04" width="35.43" height="38.27" rx=".95" ry=".95" transform="translate(-37.79 400.88) rotate(-60)"/>
+    <rect id="key-35" class="cls-2" x="385.52" y="215.45" width="38.27" height="35.43" rx=".95" ry=".95" transform="translate(-62.37 233.57) rotate(-30)"/>
+    <rect id="key-36" class="cls-2" x="437.73" y="193.73" width="38.27" height="35.43" rx=".95" ry=".95" transform="translate(-39.16 125.46) rotate(-15)"/>
+    <rect id="key-37" class="cls-2" x="494.25" y="185.94" width="38.27" height="35.43" rx=".95" ry=".95"/>
+  </g>
+</svg>
