@@ -18,6 +18,7 @@
 
 #include "totem_keypos.h"
 #include "zmk_helper.h"
+#include "zmk-helpers/helper.h"
 
 #include "mouse.h"
 

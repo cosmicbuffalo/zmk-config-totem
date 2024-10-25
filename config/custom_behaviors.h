@@ -53,27 +53,6 @@ ZMK_BEHAVIOR(comma_inner_morph, mod_morph,
     mods = <(MOD_LCTL|MOD_RCTL)>;
 )
 
-// tap: 1 | shift + tap: lparen
-ZMK_BEHAVIOR(n1_morph, mod_morph,
-    mods = <(MOD_LSFT|MOD_RSFT)>;
-    bindings = <&kp N1>, <&kp LPAR>;
-)
-// tap: 2 | shift + tap: rparen
-ZMK_BEHAVIOR(n2_morph, mod_morph,
-    mods = <(MOD_LSFT|MOD_RSFT)>;
-    bindings = <&kp N2>, <&kp RPAR>;
-)
-// tap: 4 | shift + tap: lbracket
-ZMK_BEHAVIOR(n4_morph, mod_morph,
-    mods = <(MOD_LSFT|MOD_RSFT)>;
-    bindings = <&kp N4>, <&kp LBKT>;
-)
-// tap: 5 | shift + tap: rbracket
-ZMK_BEHAVIOR(n5_morph, mod_morph,
-    mods = <(MOD_LSFT|MOD_RSFT)>;
-    bindings = <&kp N5>, <&kp RBKT>;
-)
-
 // tap: dot | shift + tap: colon | ctrl + shift + tap: >
 ZMK_BEHAVIOR(dot_morph, mod_morph,
     bindings = <&kp DOT>, <&dot_inner_morph>;
@@ -85,10 +64,10 @@ ZMK_BEHAVIOR(dot_inner_morph, mod_morph,
 )
 
 // tap: qmark | shift + tap: excl
-ZMK_BEHAVIOR(qexcl, mod_morph,
-    bindings = <&kp QMARK>, <&kp EXCL>;
-    mods = <(MOD_LSFT|MOD_RSFT)>;
-)
+/*ZMK_BEHAVIOR(qexcl, mod_morph,*/
+/*    bindings = <&kp QMARK>, <&kp EXCL>;*/
+/*    mods = <(MOD_LSFT|MOD_RSFT)>;*/
+/*)*/
 
 
 // tap: space | shift + tap: underscore | hold: activate layer

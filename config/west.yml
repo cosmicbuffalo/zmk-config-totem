@@ -1,13 +1,31 @@
 manifest:
   remotes:
-    - name: zmkfirmware
+    - name: upstream
       url-base: https://github.com/zmkfirmware
     - name: urob
       url-base: https://github.com/urob
+    - name: rafaelromao
+      url-base: https://github.com/rafaelromao
+    - name: ssbb
+      url-base: https://github.com/ssbb
+    - name: dhruvinsh
+      url-base: https://github.com/dhruvinsh
   projects:
     - name: zmk
       remote: urob
-      revision: main
+      revision: going-modular
       import: app/west.yml
+    - name: zmk-antecedent-morph
+      remote: ssbb
+      revision: v1
+    - name: zmk-tri-state
+      remote: dhruvinsh
+      revision: main
+    - name: zmk-auto-layer
+      remote: urob
+      revision: main
+    - name: zmk-helpers
+      remote: urob
+      revision: main
   self:
     path: config
