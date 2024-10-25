@@ -136,7 +136,7 @@ ZMK_BEHAVIOR(caps_dance, tap_dance,
 // tap: num word | double-tap: esc
 ZMK_BEHAVIOR(numl_dance, tap_dance,
     tapping-term-ms = <200>;
-    bindings = <&num_word>, <&kp ESC>;
+    bindings = <&num_word NUM>, <&kp ESC>;
 )
 ZMK_BEHAVIOR(comma_space, macro,
     bindings = <&macro_tap &kp COMMA &kp SPACE>;
